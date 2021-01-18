@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Cycle Cameras",
     "author": "CoDEmanX",
-    "version": (1, 0),
+    "version": (1, 1),
     "blender": (2, 65, 0),
     "location": "View3D > Ctrl + Shift + Left/Right Arrow",
     "description": "Switch scene camera to next or previous camera object",
@@ -68,3 +68,6 @@ def unregister():
 
 if __name__ == "__main__":
     register()
+    
+bpy.utils.register_class(VIEW3D_OT_cycle_cameras)
+bpy.utils.unregister_class(VIEW3D_OT_cycle_cameras)
