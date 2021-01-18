@@ -46,7 +46,7 @@ class VIEW3D_OT_cycle_cameras(bpy.types.Operator):
 addon_keymaps = []
 
 def register():
-    bpy.utils.register_module(__name__)
+    bpy.utils.register_class(VIEW3D_OT_cycle_cameras)
 
     wm = bpy.context.window_manager
     kc = wm.keyconfigs.addon
@@ -64,7 +64,6 @@ def unregister():
     for km, kmi in addon_keymaps:
         km.keymap_items.remove(kmi)
     addon_keymaps.clear()
-    bpy.utils.unregister_module(__name__)
     bpy.utils.unregister_class(VIEW3D_OT_cycle_cameras)
 
 
