@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Cycle Cameras",
-    "author": "CoDEmanX",
+    "author": "CoDEmanX, kariboo84, design4use",
     "version": (1, 1),
-    "blender": (2, 65, 0),
+    "blender": (2, 80, 0),
     "location": "View3D > Ctrl + Shift + Left/Right Arrow",
     "description": "Switch scene camera to next or previous camera object",
     "warning": "",
